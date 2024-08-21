@@ -1,0 +1,135 @@
+.card  {
+    background-color: var(--color-white);
+    z-index: 3;
+    max-width: 400px;
+    width: 367px;
+    margin: 5px;
+    border: none;
+    border-radius: 12px;
+    color: var(--color-very-dark-blue);
+}
+
+.card-container { 
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-content { 
+    width: 100%;
+}
+
+
+.empty { 
+    height: 217px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: var(--color-dark-grayish-blue);
+    font-size: 1rem;
+}
+
+mat-card{ 
+    box-shadow: 0 0 18px -6px black;
+}
+
+mat-divider { 
+    color: hsl(220, 14%, 75%);
+    border-width: 1px
+}
+
+mat-card-header { 
+    padding: 20px;
+}
+
+mat-card-title {
+    font-weight: 700;
+}
+
+img { 
+    width: 45px;
+    border-radius: 4px;
+}
+
+.thumbnail-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 ;
+    gap: 10px
+}
+
+
+.thumbnail-container svg { 
+    cursor: pointer;
+}
+.add-cart { 
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    background-color: var(--color-orange);
+    transition: opacity 150ms ease;
+    border: none;
+}
+
+.add-cart div { 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-very-dark-blue);
+  padding: 15px;
+}
+
+.add-cart path { 
+  fill: var(--color-very-dark-blue);
+}
+
+strong { 
+    color: var(--color-very-dark-blue);
+    font-weight: 700;
+}
+
+.add-cart:hover {
+    opacity: .7;
+}
+
+/* @media only screen and (min-width: 1000px){
+    .card { 
+        top: 80px;
+    }
+}
+
+@media only screen and (min-width: 450px){
+    .card { 
+        right: 5vw;
+
+    }
+
+}
+
+@media only screen and (min-width: 1750px){
+    .card { 
+        right: 12vw;
+    }
+} */
+
+
+/* 
+
+@media only screen and (min-width: 1250px){
+    .card { 
+        right: calc(100vw);
+    }
+
+} */

@@ -1,0 +1,24 @@
+<div class="backdrop" (click)="onClose()"></div>
+
+<div class="img-containet">
+    <div class="product-images">
+        <div class="line-container" (click)="onClose()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+
+        <div class="previous" (click)="togglePrevious()"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></div>
+        <div class="product">
+      
+          <img class="img-main" [src]="currentImage" alt="image-product" draggable="false">
+          <div class="img-list-container">
+            @for (img of imgList; track $index) {
+              <div class="img-list-item" [class.current-border]="currentImage == img" (click)="onImage($index)">
+                <img [src]="img" [alt]="img" [class.current-opacity]="currentImage == img" draggable="false">
+              </div>
+            }
+          </div>
+        </div>
+        <div class="next" (click)="toggleNext()"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></div>
+      </div>
+</div>

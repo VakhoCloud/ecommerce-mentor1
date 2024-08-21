@@ -1,0 +1,226 @@
+.line1, .line2 {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: var(--color-white);
+  /* transition: backgroung-color 150ms ease; */
+}
+
+
+
+.line-container { 
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  top: -55px;
+  right: 0;
+  transition: background-color 150ms ease;
+}
+
+.line-container:hover .line1,
+.line-container:hover .line2 { 
+  background-color: hsl(26, 100%, 55%)
+}
+
+
+.line1 { 
+  top: 12px;
+  right: 0;
+  transform: rotate(45deg);
+
+}
+.line2 { 
+  top: 12px;
+  right: 0;
+  transform: rotate(-45deg) ;
+}
+
+img { 
+  width: 100%;
+}
+
+.product-images {
+  position: relative;
+  width: 100vw; 
+  max-width: 500px; 
+  margin: auto;
+}
+
+.product-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-images { 
+  position: relative;
+  width: 100%; 
+  max-width: 500px; 
+  margin: auto;
+  height: auto;
+}
+
+.img-list-container { 
+  display: none;
+}
+
+
+.previous, .next { 
+  /* position: absolute; */
+  background-color: var(--color-white);
+  height: 18px;
+  width: 18px;
+  padding: 10px;
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-white); /* Optional: add background color */
+  padding: 10px; /* Optional: add padding */
+  cursor: pointer;
+}
+
+.previous {
+  left: 10px; /* Adjust as needed */
+}
+
+.next {
+  right: 10px; /* Adjust as needed */
+}
+
+div path {
+  transition: filter 150ms ease;
+}
+
+.previous:hover path,
+.next:hover path {
+  filter: invert(18%) sepia(93%) saturate(3437%) hue-rotate(-15deg) brightness(95%) contrast(90%); 
+}
+
+
+.previous svg,
+.next svg {
+  display: block;
+}
+
+.img-list-item { 
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.img-list-item:hover {
+  opacity: .7;
+}
+
+
+@media only screen and (min-width: 1000px){
+
+  .previous {
+      top: 40%;
+      left: -20px; /* Adjust as needed */
+    }
+    
+    .next {
+      top: 40%;
+      right: -20px; /* Adjust as needed */
+    }
+
+  .img-list-container { 
+    display:flex;
+    gap: 20px;
+  }
+
+  .product-images img {
+    object-position: 100% 0;
+  }
+
+  .product { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .img-main { 
+    border-radius: 12px;
+  }
+
+
+
+  .img-list-item img,
+  .img-list-item{ 
+    border-radius: 12px;
+  }
+
+  .current-border { 
+    border: 2px solid var(--color-orange);
+  }
+  
+
+  .current-opacity { 
+    color: #fff;
+    opacity: .5;
+    /* fill: hsl(0, 0%, 100%, .5); */
+  }
+
+
+  .image-avatar{ 
+    position: relative;
+  }
+
+
+  .image-avatar { 
+    height: 50px;
+  }
+
+  .avatar { 
+    gap: 50px;
+  }
+
+  .desktop-nav li, .avatar svg {
+    z-index: 3;
+    cursor: pointer;
+  }
+ 
+}
+
+app-light-box { 
+  position: absolute;
+}
+
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  z-index: 5;
+  background-color: hsl(0, 0%, 0%, .75);
+}
+
+.img-containet { 
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 5; */
+}
+
+
+.product-images { 
+  z-index: 6;
+}

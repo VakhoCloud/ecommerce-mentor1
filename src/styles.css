@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root { 
+   --color-orange: hsl(26, 100%, 55%);
+   --color-pale-orange: hsl(25, 100%, 94%);
+   --color-very-dark-blue: hsl(220, 13%, 13%);
+   --color-dark-grayish-blue:  hsl(219, 9%, 45%);
+   --color-grayish-blue: hsl(220, 14%, 75%);
+   --color-light-grayish-blue: hsl(223, 64%, 98%);
+   --color-white: hsl(0, 0%, 100%);
+   --color-black: hsl(0, 0%, 0%);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: var(--color-very-dark-blue);
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "YOPQ" 300;
+ }
+html, body { height: 100%; }
+body { 
+   font-size: 1rem;
+   margin: 0; 
+}
