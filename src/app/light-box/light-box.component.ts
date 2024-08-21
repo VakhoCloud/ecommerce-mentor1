@@ -15,10 +15,10 @@ export class LightBoxComponent {
   
   quantity = 0;
   imgList = [
-    '/ecommerce-mentor/assets/images/image-product-1.JPG',
-    '/ecommerce-mentor/assets/images/image-product-2.JPG',
-    '/ecommerce-mentor/assets/images/image-product-3.JPG',
-    '/ecommerce-mentor/assets/images/image-product-4.JPG'
+    '../../assets/images/image-product-1.JPG',
+    '../../assets/images/image-product-2.JPG',
+    '../../assets/images/image-product-3.JPG',
+    '../../assets/images/image-product-4.JPG'
   ]
   currentImage = this.imgList[0];
   
