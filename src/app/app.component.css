@@ -9,6 +9,7 @@ img {
 
 .image-avatar { 
   height: 25px;
+  width: 25px;
 }
 
 
@@ -550,6 +551,7 @@ app-cart {
 
   .image-avatar { 
     height: 50px;
+    width: 50px;
   }
 
   .avatar { 
