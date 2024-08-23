@@ -165,7 +165,6 @@ mat-nav-list::ng-deep span{
   position: absolute;
   display: flex;
   gap: 20px;
-  align-items: center;
   right: 20px;
 }
 
