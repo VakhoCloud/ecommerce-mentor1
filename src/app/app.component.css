@@ -145,7 +145,6 @@ mat-toolbar {
 mat-nav-list {
   display: flex;
   flex-direction: column;
-  /* font-size: 1.2rem; */
   height: 100%;
   width: 100%;
   background-color: var(--color-white); 
@@ -313,6 +312,8 @@ h5 {
 
 .cart { 
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .previous, .next { 
